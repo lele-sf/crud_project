@@ -10,5 +10,5 @@ Projeto completo para gerenciar **clients**, **tasks** e **projects**, composto 
 
 ## Como Rodar
 Siga as instruções específicas nos `README.md` dentro de cada pasta:
-- [Backend](./backend/README.md)
-- [Frontend](./frontend/README.md)
+- [Backend](https://github.com/lele-sf/crud_project/tree/main/crud-backend)
+- [Frontend](https://github.com/lele-sf/crud_project/tree/main/crud-frontend)
