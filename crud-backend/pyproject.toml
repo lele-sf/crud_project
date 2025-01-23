@@ -1,0 +1,57 @@
+[tool.poetry]
+name = "crud_backend"
+version = "0.1.0"
+description = ""
+authors = ["Leticia Fernandes <leticia.fernandes@agcapital.com.br>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["standard"], version = "^0.115.5"}
+sqlalchemy = "^2.0.36"
+pydantic-settings = "^2.6.1"
+alembic = "^1.14.0"
+psycopg = {extras = ["binary"], version = "^3.2.3"}
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pytest-cov = "^6.0.0"
+taskipy = "^1.14.0"
+flake8 = "^7.1.1"
+black = "^24.10.0"
+factory-boy = "^3.3.1"
+mypy = "^1.14.1"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = '-v -p no:warnings'
+
+[tool.mypy]
+python_version = "3.13"
+files = "./crud_backend"
+check_untyped_defs = true
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+ignore_missing_imports = true
+strict_optional = true
+plugins = ['pydantic.mypy']
+
+[tool.pydantic-mypy]
+init_forbid_extra = true
+init_typed = true
+warn_required_dynamic_aliases = true
+
+[tool.taskipy.tasks]
+lint = "flake8 ."
+format = "black ."
+run = 'fastapi dev crud_backend/main.py'
+pre_test = 'task lint'
+test = 'pytest -s -x --cov=. -vv'
+post_test = 'coverage html'
+type_check = "mypy crud_backend/"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
