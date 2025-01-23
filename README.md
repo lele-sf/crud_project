@@ -9,6 +9,10 @@ Projeto completo para gerenciar **clients**, **tasks** e **projects**, composto 
 - **frontend/**: Contém a interface do usuário desenvolvida em Vue 3.
 
 ## Como Rodar
-Siga as instruções específicas nos `README.md` dentro de cada pasta:
+1. **Clone o repositório**:
+   ```bash
+   git clone git@github.com:lele-sf/crud_project.git
+    ```
+2. **Siga as instruções específicas nos `README.md` dentro de cada pasta**:
 - [Backend](https://github.com/lele-sf/crud_project/tree/main/crud-backend)
 - [Frontend](https://github.com/lele-sf/crud_project/tree/main/crud-frontend)

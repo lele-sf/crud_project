@@ -5,12 +5,7 @@ Backend desenvolvido com **FastAPI** para gerenciar **clients**, **tasks** e **p
 
 ## Como Rodar
 
-1. **Clone o repositório**:
-   ```bash
-   git clone https://leticiafernandes1@bitbucket.org/agnesprojects/crud-bakcend.git
-   ```
-
-2. **Instale as dependências**:
+1. **Instale as dependências**:
     ```bash
     poetry install
     ```

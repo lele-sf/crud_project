@@ -10,17 +10,12 @@ Frontend desenvolvido com **Vue 3** e **Vuetify** para gerenciar **clients**, **
 
 ### Passos
 
-1. **Clone o repositório**:
-   ```bash
-   git clone https://leticiafernandes1@bitbucket.org/agnesprojects/crud-frontend.git
-   ```
-
-2. **Instale as dependências**:
+1. **Instale as dependências**:
     ```bash
     npm install
     ```
 
-3. **Inicie o servidor de desenvolvimento**:
+2. **Inicie o servidor de desenvolvimento**:
     ```bash
     npm run dev
     ```
