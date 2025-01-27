@@ -8,6 +8,9 @@ Projeto completo para gerenciar **clients**, **tasks** e **projects**, composto 
 - **backend/**: Contém a API desenvolvida em FastAPI.
 - **frontend/**: Contém a interface do usuário desenvolvida em Vue 3.
 
+## Diagrama de Classes
+<img src="./assets/class_diagram.png" alt="Class Diagram">
+
 ## Como Rodar
 1. **Clone o repositório**:
    ```bash
